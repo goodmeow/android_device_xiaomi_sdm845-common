@@ -277,7 +277,8 @@ PRODUCT_COPY_FILES += \
 
 TARGET_COMMON_QTI_COMPONENTS := \
     av \
-    perf
+    perf \
+    bt
 
 # Radio
 PRODUCT_PACKAGES += \

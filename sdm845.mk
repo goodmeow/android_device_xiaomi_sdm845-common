@@ -253,6 +253,13 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService
 
+TARGET_COMMON_QTI_COMPONENTS := \
+    av \
+    bt \
+    perf \
+    telephony \
+    wfd
+
 # Radio
 PRODUCT_PACKAGES += \
     libjson \

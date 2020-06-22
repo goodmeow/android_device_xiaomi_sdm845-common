@@ -253,6 +253,7 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService
 
+# QTI
 TARGET_COMMON_QTI_COMPONENTS := \
     av \
     bt \

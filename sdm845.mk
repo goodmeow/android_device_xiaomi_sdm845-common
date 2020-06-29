@@ -312,7 +312,7 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-service
 
 # VNDK-SP
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     vndk-sp
 
 # VR

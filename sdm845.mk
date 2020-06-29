@@ -6,7 +6,7 @@
 
 
 # Setup dalvik vm configs
-$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+$(call inherit-product, vendor/pixeldust/configs/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/sdm845-common/sdm845-common-vendor.mk)
@@ -185,19 +185,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     org.ifaa.android.manager
 
-# IMS
-PRODUCT_PACKAGES += \
-    ims-ext-common \
-    ims_ext_common.xml
-
-PRODUCT_PACKAGES += \
-    qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml
-
-PRODUCT_PACKAGES += \
-    qti-telephony-utils \
-    qti_telephony_utils.xml
-
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/sdm845-tavil-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/sdm845-tavil-snd-card_Button_Jack.kl
@@ -254,10 +241,6 @@ PRODUCT_COPY_FILES += \
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
-
-# ParanoidDoze
-PRODUCT_PACKAGES += \
-    ParanoidDoze
 
 # Perf
 PRODUCT_COPY_FILES += \

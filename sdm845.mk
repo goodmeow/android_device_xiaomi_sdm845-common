@@ -108,12 +108,8 @@ PRODUCT_PACKAGES += \
     BluetoothQti \
     libbthost_if \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
-<<<<<<< HEAD
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     libbtconfigstore
-=======
-    vendor.qti.hardware.btconfigstore@1.0.vendor
->>>>>>> 34e7e83... Revert "Revert "sdm845-common: Switch to QTI BT stack""
 
 # Codec2
 PRODUCT_PACKAGES += \
@@ -287,7 +283,8 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/xiaomi
+    hardware/xiaomi \
+    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
 
 # Telephony
 PRODUCT_PACKAGES += \

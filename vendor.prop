@@ -85,9 +85,6 @@ persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 vendor.qcom.bluetooth.soc=cherokee
 ro.bluetooth.library_name=libbluetooth_qti.so
 
-# Display post-processing
-ro.vendor.display.cabl=2
-
 # DRM
 drm.service.enabled=true
 
@@ -98,8 +95,6 @@ dalvik.vm.dex2oat64.enabled=true
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # Graphics
-debug.egl.hw=0
-debug.sf.hw=0
 ro.opengles.version=196610
 
 # IMS
